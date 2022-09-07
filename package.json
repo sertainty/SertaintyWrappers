@@ -1,0 +1,26 @@
+{
+  "name": "sertainty-sdk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:win32": "node index.js",
+    "start:darwin": "DYLD_LIBRARY_PATH=~/Sertainty/developer/bin node index.js",
+    "start:linux": "LD_LIBRARY_PATH=~/Sertainty/developer/bin node index.js"
+  },
+  "author": "Aruna Wijerathna",
+  "engines": {
+    "node": "10.x"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "ffi": "^2.3.0",
+    "ref": "^1.3.5",
+    "ref-array": "^1.2.0"
+  }
+}
