@@ -1,5 +1,6 @@
 const ref = require("ref");
 const ffi = require("ffi");
+const readBytes = require('@arunwij/read-bytes');
 const {
   intType,
   voidPtrType,
@@ -12,6 +13,11 @@ const { uxpSys } = require("./wrapper");
 const readAsString = function readAsString(handle) {
   const string = ref.readCString(handle, 0);
   return string;
+};
+
+const readAsBuffer = function readAsBuffer(handle, size) {
+  const buffer = readBytes(handle, size);
+  return buffer;
 };
 
 const checkError = (handle, errorPrefix = null) => {
@@ -62,6 +68,7 @@ const getDelegateLookupCallback = (
 };
 
 module.exports = {
+  readAsBuffer,
   readAsString,
   checkError,
   getDelegateLookupCallback,

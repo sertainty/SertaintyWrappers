@@ -16,6 +16,7 @@ const config = {
 
 function getSertaintyHome() {
   const SERTAINTY_HOME = process.env.SERTAINTY_HOME;
+  console.log(" SERTAINTY_HOME = process.env.SERTAINTY_HOME;   ",SERTAINTY_HOME)
   if (SERTAINTY_HOME && SERTAINTY_HOME.length > 0) {
     return SERTAINTY_HOME;
   }
