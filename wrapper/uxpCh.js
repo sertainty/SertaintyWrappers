@@ -19,6 +19,17 @@ exports.getPrompt = (challengeHandle, bufferHandle) => {
 exports.setValueString = (challengeHandle, value) => {
   uxpCh.setValueString(challengeHandle, value);
 };
+exports.setName = (challengeHandle, value) => {
+  uxpCh.setName(challengeHandle, value);
+};
+//setValue
+exports.SetValue = (challengeHandle, value) => {
+  uxpCh.SetValue(challengeHandle, value);
+};
+//  setPrompt
+exports.setPrompt = (challengeHandle, value) => {
+  uxpCh.setPrompt(challengeHandle, value);
+};
 
 // startTimer
 exports.startTimer = challengeHandle => {

@@ -73,6 +73,10 @@ try {
       setValueString: core.uxpch_setValueString,
       startTimer: core.uxpch_startTimer,
       endTimer: core.uxpch_endTimer,
+      setName: core.uxpch_setName,
+      setPrompt: core.uxpch_setPrompt,
+      //setValue: core.uxpch_setValue,
+      seyKey:core.uxpch_setKey,
     },
     uxpSys: {
       setLogFile: core.uxpsys_setLogFile,
@@ -109,6 +113,8 @@ try {
       addResponse: core.uxpid_addResponse,
       openUxpFromFile: core.uxpid_openUxpFromFile,
       closeSession: core.uxpid_closeSession,
+      getSecureText: core.uxlmsg_getSecureText,
+      LoadSecureText: core.uxlmsg_loadSecureText,
     },
     uxpFile: {
       newHandle: core.uxpfile_newHandle,

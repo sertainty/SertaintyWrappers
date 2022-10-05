@@ -38,6 +38,7 @@ exports.uxpsys_initLibrary = [
 ];
 // uxpsys_newCallStatusHandle
 exports.uxpsys_newCallStatusHandle = [intPtrType, []];
+exports.uxpsys_newCallStatusHandle = [intPtrType, []];
 // freeCallStatusHandle
 exports.uxpsys_freeCallStatusHandle = [voidType, [intPtrType]];
 // fileReadAll
@@ -222,6 +223,11 @@ exports.uxpid_validate = [voidType, [intPtrType, stringType, intPtrType]];
 //close session
 exports.uxpid_closeSession = [voidType, [intPtrType]];
 
+
+exports.uxlmsg_getSecureText = [voidType, [intPtrType, intPtrType, stringType, intType]];
+
+exports.uxlmsg_loadSecureText = [voidType, [intPtrType, stringType, stringType, stringType, intType]];
+
 /**
  * UXP_CH
  */
@@ -232,10 +238,20 @@ exports.uxpch_freeHandle = [voidType, [intPtrType]];
 exports.uxpch_getPrompt = [stringType, [intPtrType, intPtrType]];
 // setValueString
 exports.uxpch_setValueString = [voidType, [intPtrType, stringType]];
+//SetName
+exports.uxpch_setName = [voidType, [intPtrType, stringType]];
+//SetPrompt
+exports.uxpch_setPrompt = [voidType, [intPtrType, stringType]];
+//SetValue
+//exports.uxpch_SetValue = [voidType, [intPtrType, stringType]];
+// setKey
+exports.uxpch_setKey = [voidType, [intPtrType, stringType]];
 // startTimer
 exports.uxpch_startTimer = [voidType, [intPtrType]];
 // endTimer
 exports.uxpch_endTimer = [voidType, [intPtrType]];
+//
+
 
 /**
  * UXP LIST

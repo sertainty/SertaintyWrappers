@@ -111,19 +111,21 @@ exports.getChallengeCount = (uxpHandle) => {
 };
 
 // getChallenge
-exports.getChallenge = (uxpHandle, offset) => {
-  let challengeHandle = uxpId.getChallenge(uxpHandle, offset);
+exports.getChallenge = (uxpHandle, offset) => {let challengeHandle = uxpId.getChallenge(uxpHandle, offset);
   return challengeHandle;
 };
 
+
+exports.getSecureText = (callStatusHandle, buff, domain, id) =>
+{uxpId.getSecureText(callStatusHandle, ba, domain, id);};
+
+//Loads secure text strings.  Secure messages are construct
+exports.LoadSecureText = (callStatusHandle, domain, fileName, buff, key_size ) =>
+{uxpId.LoadSecureText (callStatusHandle, domain, fileName, buff, key_size );};
+
+
 // addResponse
-exports.addResponse = (uxpHandle, challengeHandle) => {
-  uxpId.addResponse(uxpHandle, challengeHandle);
-};
+exports.addResponse = (uxpHandle, challengeHandle) => {uxpId.addResponse(uxpHandle, challengeHandle);};
 //open uxp fom file
-exports.openUxpFromFile = (idHande, uxpHandle, source, mode) => {
-  uxpId.openUxpFromFile(idHande, uxpHandle, source, mode);
-};
-exports.closeSession = (idHande) => {
-  uxpId.closeSession(idHande);
-};
+exports.openUxpFromFile = (idHande, uxpHandle, source, mode) => {uxpId.openUxpFromFile(idHande, uxpHandle, source, mode);};
+exports.closeSession = (idHande) => {uxpId.closeSession(idHande);};

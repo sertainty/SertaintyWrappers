@@ -35,6 +35,11 @@ exports.hasError = (handle) => {
   return hasError;
 };
 
+// exports.setLogging = (handle) => {
+//   let hasError = uxpSys.hasError(handle);
+//   //return hasError;
+// };
+
 exports.getErrorMessage = (handle) => {
   let errorHandle = uxpSys.getErrorMessage(handle);
   return errorHandle;
